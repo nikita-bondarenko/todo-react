@@ -1,0 +1,60 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(black, .5);
+  transition: background, .3s ease-in-out;
+
+  &_hover {
+    background: rgba(black, .6);
+  }
+
+  &_hidden {
+    display: none;
+
+  }
+
+  &_open {
+    display: block;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    transition: opacity .3s ease-in-out;
+    &_disable {
+      pointer-events: none;
+      opacity: .8;
+    }
+  }
+
+  &__close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px;
+    border-radius: 100%;
+  }
+
+
+}
+
+
+

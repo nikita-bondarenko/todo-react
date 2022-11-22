@@ -1,0 +1,88 @@
+button, a {
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  padding:10px;
+  cursor: pointer;
+  margin-left: -10px;
+  &:hover {
+    background: rgba(black, .1);
+  }
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+h2  {
+  margin-top: 0px;
+  font-size: 24px;
+  text-align: center;
+
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+
+}
+
+li {
+  background: rgba(blue, .1);
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    cursor: pointer;
+  }
+  padding-bottom: 20px;
+}
+
+* {
+  transition: background .2s ease-in-out;
+}
+
+.danger {
+  background: rgba(red, .1);
+}
+
+.success {
+  background: rgba(green, .1);
+}
+
+.error {
+  color: red;
+text-align: center;
+}
+
+.submit {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.spinner__main {
+  position: fixed !important;
+}
+
